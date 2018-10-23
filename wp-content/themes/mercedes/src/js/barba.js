@@ -3,6 +3,7 @@ import Barba from "barba.js";
 import bowser from "bowser";
 import lazyLoad from "./utils/lazy";
 import { scrollIndicator, stickyFooter } from "./components/footer";
+import { openSlides } from "./utils/openSlides";
 import { TweenLite } from "gsap/TweenLite";
 import { CSSPlugin } from "gsap/CSSPlugin";
 import { TimelineLite } from "gsap/TimelineLite";
@@ -37,7 +38,9 @@ var singleProductSliderInit = function() {
     }
   });
 
-  singleProductSlider.controller.control = singleProductThumbs;
+  if(singleProductSlider){
+  //singleProductSlider.controller.control = singleProductThumbs;
+  }
   //singleProductThumbs.controller.control = singleProductSlider;
 
   var singleProductThumbs = new Swiper(".js-video-text-slider", {
@@ -64,6 +67,7 @@ export const barbaInit = () => {
     lastClickEl = el;
   });
   singleProductSliderInit();
+  openSlides();
   /* ----------------------------------
     VIEWS
   ---------------------------------- */
@@ -78,6 +82,7 @@ export const barbaInit = () => {
       _html.classList.add("home-is-loaded");
       stickyFooter();
       scrollIndicator();
+      openSlides();
     },
     onLeave: function() {
       removeAllEventListeners();
