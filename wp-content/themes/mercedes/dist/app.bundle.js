@@ -31271,7 +31271,10 @@ var singleProductSliderInit = function () {
       loadPrevNext: false
     }
   });
-  singleProductSlider.controller.control = singleProductThumbs; //singleProductThumbs.controller.control = singleProductSlider;
+
+  if (singleProductSlider) {} //singleProductSlider.controller.control = singleProductThumbs;
+  //singleProductThumbs.controller.control = singleProductSlider;
+
 
   var singleProductThumbs = new swiper__WEBPACK_IMPORTED_MODULE_9__["default"](".js-video-text-slider", {
     slidesPerView: 1,

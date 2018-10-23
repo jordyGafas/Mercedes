@@ -1,5 +1,5 @@
 
-<footer class="l-footer js-footer<?php if ( is_page() ) { ?> is-sticky<?php } ?>">
+<footer class="l-footer js-footer<?php if ( true) { ?> is-sticky<?php } ?>">
   <div class="l-footer__progress progress">
     <div class="progress__bar"></div>
   </div>

@@ -38,7 +38,9 @@ var singleProductSliderInit = function() {
     }
   });
 
-  singleProductSlider.controller.control = singleProductThumbs;
+  if(singleProductSlider){
+  //singleProductSlider.controller.control = singleProductThumbs;
+  }
   //singleProductThumbs.controller.control = singleProductSlider;
 
   var singleProductThumbs = new Swiper(".js-video-text-slider", {
