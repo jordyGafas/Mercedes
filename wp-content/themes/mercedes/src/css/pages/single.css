@@ -57,7 +57,7 @@
     } 
 
     & .row {
-         /*margin-bottom: 110px;*/
+         margin-bottom: 110px;
     }
 
     & blockquote.wp-block-quote {
@@ -90,9 +90,9 @@
         top: 14rem;
         left: 0;
         right: 0;
-        z-index: 4;
+        z-index: 6;
 
-        & .row {
+        & .back-row {
             max-width: 160rem;
             width: 90%;
             margin-left: auto;
@@ -117,6 +117,12 @@
                 line-height: 0;
                 position: relative;
                 transition: all .3s ease;
+            }
+        }
+        & a:hover {
+            & div:first-of-type{
+                -webkit-transform:translate(-5px);
+                transform:translate(-5px)
             }
         }
     }

@@ -90,6 +90,9 @@
       line-height: 1.6rem;
       text-transform: uppercase;
       letter-spacing: 0.1rem;
+      & a {
+        color:#fff;
+      }
       &:after {
         content: " ";
         width: 30px;
@@ -756,6 +759,7 @@
     position: absolute;
     width: 80%;
     top: 50%;
+         text-align: center;
     left: 50%;
     transform: translate(-50%, 0);
     & h2 {
