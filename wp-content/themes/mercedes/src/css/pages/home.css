@@ -715,6 +715,9 @@
       & span {
         background-color: #00a8e7;
         box-shadow: 10px 0 0 #00a8e7, -10px 0 0 #00a8e7;
+        & a {
+          color:#fff;
+        }
       }
     }
   }
