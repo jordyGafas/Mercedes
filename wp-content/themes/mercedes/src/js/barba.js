@@ -3,6 +3,7 @@ import Barba from "barba.js";
 import bowser from "bowser";
 import lazyLoad from "./utils/lazy";
 import { scrollIndicator, stickyFooter } from "./components/footer";
+import { sideMenuButton } from "./components/overlay";
 import { openSlides } from "./utils/openSlides";
 import { TweenLite } from "gsap/TweenLite";
 import { CSSPlugin } from "gsap/CSSPlugin";
@@ -67,7 +68,8 @@ export const barbaInit = () => {
     lastClickEl = el;
   });
   singleProductSliderInit();
-  openSlides()
+  openSlides();
+  //sideMenuButton();
   /* ----------------------------------
     VIEWS
   ---------------------------------- */
@@ -83,6 +85,7 @@ export const barbaInit = () => {
       stickyFooter();
       scrollIndicator();
       openSlides();
+      //sideMenuButton();
     },
     onLeave: function() {
       removeAllEventListeners();
@@ -100,6 +103,7 @@ export const barbaInit = () => {
       _html.classList.add("article-is-loaded");
       stickyFooter();
       scrollIndicator();
+      //sideMenuButton();
     },
     onLeave: function() {
       _body.classList.remove("is-article");
@@ -119,6 +123,7 @@ export const barbaInit = () => {
       _html.classList.add("page-is-loaded");
       stickyFooter();
       scrollIndicator();
+      sideMenuButton();
     },
     onLeave: function() {
       _body.classList.remove("is-page");

@@ -58,6 +58,9 @@
   & .l-footer__social {
     text-align: center;
     flex: 1;
+     @media (--bp-lg) {
+      margin-right: 25rem;
+     }
     & ul {
       & li {
         & a {
@@ -73,9 +76,12 @@
   }
   & .l-footer__brand {
     text-align: right;
-    flex: 0 0 10rem;
+    flex: 0 0 0rem;
+    border-right: 1px solid rgba(0,0,0,.2);
+    padding: 0 1.5rem;
+    border-left: 1px solid rgba(0,0,0,.2);
     @media (--bp-lg) {
-      flex: 0 0 35rem;
+      
     }
     & img {
       max-width: 3rem;
@@ -97,6 +103,12 @@
         }
       }
     }
+  }
+
+  & .menu-icon{
+    width: 17px;
+    margin-left: 1.5rem;
+    cursor: pointer;
   }
 }
 /* ----------------------------------------
