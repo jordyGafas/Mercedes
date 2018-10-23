@@ -267,7 +267,7 @@ get_header();?>
       <?php the_field('block7_video'); ?>
     </div>
     <div class="slider-container">
-      <div class="slider-arrow single-video-slider-prev slider-arrow-right">
+      <div class="slider-arrow single-video-slider-prev slider-arrow-right bigscreen">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
           viewBox="0 0 96 87" enable-background="new 0 0 96 87" xml:space="preserve">
         <path d="M68.8,42.5H31.1l3.6-3.6l-1.4-1.4l-6,6l6,6l1.4-1.4l-3.6-3.6h37.7V42.5z"/>
@@ -302,7 +302,23 @@ get_header();?>
                 ?>
               </div>
               </div>
-      <div class="slider-arrow single-video-slider-next slider-arrow-left">
+      <div class="slider-arrow single-video-slider-next slider-arrow-left bigscreen">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 96 87" enable-background="new 0 0 96 87" xml:space="preserve">
+          <path d="M68.8,42.5H31.1l3.6-3.6l-1.4-1.4l-6,6l6,6l1.4-1.4l-3.6-3.6h37.7V42.5z"/>
+          <path d="M95,1v85H1V1H95 M96,0H0v87h96V0L96,0z"/>
+        </svg>
+      </div>
+    </div>
+    <div class="slider-container">
+      <div class="slider-arrow single-video-slider-prev slider-arrow-right smallscreen">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            viewBox="0 0 96 87" enable-background="new 0 0 96 87" xml:space="preserve">
+          <path d="M68.8,42.5H31.1l3.6-3.6l-1.4-1.4l-6,6l6,6l1.4-1.4l-3.6-3.6h37.7V42.5z"/>
+          <path d="M95,1v85H1V1H95 M96,0H0v87h96V0L96,0z"/>
+        </svg>
+      </div>
+      <div class="slider-arrow single-video-slider-next slider-arrow-left smallscreen">
         <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             viewBox="0 0 96 87" enable-background="new 0 0 96 87" xml:space="preserve">
           <path d="M68.8,42.5H31.1l3.6-3.6l-1.4-1.4l-6,6l6,6l1.4-1.4l-3.6-3.6h37.7V42.5z"/>
