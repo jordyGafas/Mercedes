@@ -16,7 +16,7 @@ get_header();?>
       </div>
       <div class="button read-more">
         <span class="button-text">
-          Lees verder
+          <?php the_field('block1_button_text')?>
         </span>
         <span class="button-icon">
           <svg height="13" viewBox="0 0 42 13" width="42" xmlns="http://www.w3.org/2000/svg">
@@ -252,7 +252,7 @@ get_header();?>
       <div class="slide-open-content-inner-container closed">
           <div class="slide-open-content-inner">
           <p>
-            <?php the_field('block1_hidden_text') ?>
+            <?php the_field('block6_hidden_text') ?>
           </p>
         </div>
       </div>
@@ -357,7 +357,7 @@ get_header();?>
     <div class="text"><?php the_field('block9_text'); ?></div>
     <div class="button">
         <span class="button-text">
-         <?php the_field('block9_button_text'); ?>
+         <a href="<?php the_field('block9_button_link'); ?>" target="_blank"><?php the_field('block9_button_text'); ?></a>
         </span>
         <span class="button-icon">
           <svg height="13" viewBox="0 0 42 13" width="42" xmlns="http://www.w3.org/2000/svg">
