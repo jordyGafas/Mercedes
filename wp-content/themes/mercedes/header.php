@@ -29,6 +29,7 @@ $mode = get_field('mode', 'option');
 <?php } ?>
 <link rel="dns-prefetch" href="google-analytics.com">
 <?php wp_head(); ?>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 <?php if ( true ) { ?>
 <?php if ( $blog_id == 1 ) { ?>
 <!-- Global site tag (gtag.js) - Google Analytics -->

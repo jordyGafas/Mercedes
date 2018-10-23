@@ -50,10 +50,10 @@ get_header();?>
       </div>
       <div class="slide-open-quote">
         <div class="quote-text">
-          <?php the_field('block1_quote'); ?>
+          <p><?php the_field('block1_quote'); ?></p>
         </div>
         <div class="quote-author">
-          <?php the_field('block1_author'); ?>
+          <p><?php the_field('block1_author'); ?></p>
         </div>
       </div>
       <div class="slide-open-content-inner-container closed">
@@ -76,10 +76,10 @@ get_header();?>
           </div>
           <div class="slide-open-quote">
             <div class="quote-text">
-              <?php the_field('block2_quote'); ?>
+              <p><?php the_field('block2_quote'); ?></p>
             </div>
             <div class="quote-author">
-              <?php the_field('block2_author'); ?>
+              <p><?php the_field('block2_author'); ?></p>
             </div>
           </div>
         </div>
@@ -204,10 +204,10 @@ get_header();?>
           </div>
           <div class="slide-open-quote">
             <div class="quote-text">
-              <?php the_field('block4_quote'); ?>
+              <p><?php the_field('block4_quote'); ?></p>
             </div>
             <div class="quote-author">
-              <?php the_field('block4_author'); ?>
+              <p><?php the_field('block4_author'); ?></p>
             </div>
           </div>
         </div>
@@ -221,10 +221,10 @@ get_header();?>
   </div>
   <div class="slide-open-quote">
     <div class="quote-text">
-      <?php the_field('block5_quote'); ?>
+      <p><?php the_field('block5_quote'); ?></p>
     </div>
     <div class="quote-author">
-      <?php the_field('block5_author'); ?>
+      <p><?php the_field('block5_author'); ?></p>
     </div>
   </div>
 </div>

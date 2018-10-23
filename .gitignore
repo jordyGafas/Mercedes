@@ -1,5 +1,5 @@
 wp-config.php
-wp-content/themes/mercedes/dist/app.bundle.css.map
+wp-content/themes/mercedes/dist
 wp-content/themes/mercedes/dist/app.bundle.css
 wp-content/themes/mercedes/dist/app.bundle.js
 wp-content/themes/mercedes/dist/app.bundle.js.map
@@ -20,3 +20,4 @@ wp-content/themes/mercedes/dist/app.bundle.css.map
 wp-config.php
 wp-config.php
 wp-config.php
+wp-content/themes/mercedes/node_modules/.cache
