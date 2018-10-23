@@ -36,7 +36,7 @@ get_header();?>
         <?php the_field('block1_text') ?>
       </p>
     </div>
-    <div class="slide-open-container">
+    <div class="slide-open-container slide-open-container1">
       <div class="slide-open-toggle">
         <svg viewBox="0 0 59 60" xmlns="http://www.w3.org/2000/svg" class="litf-toggle-action__icon">
           <g fill="none">
@@ -46,8 +46,7 @@ get_header();?>
           </g>
         </svg>
       </div>
-      <div class="slide-open-content" style='background-image: linear-gradient(rgba(102, 149, 164, 0.45), rgba(102, 149, 164, 0.45)),url("<?php the_field('block1_image')?>");'>
-
+      <div class="slide-open-content closed" style='background-image: linear-gradient(rgba(102, 149, 164, 0.45), rgba(102, 149, 164, 0.45)),url("<?php the_field('block1_image')?>");'>
       </div>
       <div class="slide-open-quote">
         <div class="quote-text">
@@ -57,6 +56,13 @@ get_header();?>
           <?php the_field('block1_author'); ?>
         </div>
       </div>
+      <div class="slide-open-content-inner-container closed">
+          <div class="slide-open-content-inner">
+          <p>
+            <?php the_field('block1_hidden_text') ?>
+          </p>
+          </div>
+        </div>
     </div>
   </div>
 </div>
