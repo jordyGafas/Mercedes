@@ -67,7 +67,7 @@ export const barbaInit = () => {
     lastClickEl = el;
   });
   singleProductSliderInit();
-  openSlides();
+  openSlides()
   /* ----------------------------------
     VIEWS
   ---------------------------------- */

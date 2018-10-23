@@ -63,7 +63,7 @@ p {
   font-weight: 500;
   font-size: 2rem;
   line-height: 4rem;
-  font-family: 'Open Sans';
+  font-family: 'Open Sans', sans-serif, 'PT Sans', "Helvetica Neue", Helvetica, Verdana, Geneva, Arial, sans-serif;
 }
 strong,
 b {

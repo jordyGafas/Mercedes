@@ -61,8 +61,8 @@ get_header();?>
           <p>
             <?php the_field('block1_hidden_text') ?>
           </p>
-          </div>
         </div>
+      </div>
     </div>
   </div>
 </div>
@@ -241,7 +241,7 @@ get_header();?>
         </p>
       </div>
     </div>
-    <div class="slide-open-container">
+    <div class="slide-open-container slide-open-container2">
       <div class="slide-open-toggle">
         <svg viewBox="0 0 59 60" xmlns="http://www.w3.org/2000/svg" class="litf-toggle-action__icon">
           <g fill="none">
@@ -251,7 +251,14 @@ get_header();?>
           </g>
         </svg>
       </div>
-      <div class="slide-open-content">
+      <div class="slide-open-content closed">
+      </div>
+      <div class="slide-open-content-inner-container closed">
+          <div class="slide-open-content-inner">
+          <p>
+            <?php the_field('block1_hidden_text') ?>
+          </p>
+        </div>
       </div>
     </div>
   </div>

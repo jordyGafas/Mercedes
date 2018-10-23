@@ -618,9 +618,18 @@
           transparent 0
         );
       }
-      & .slide-open-toggle {
-        transform: translate(-50%, -67%);
+    }
+    & .slide-open-content-inner-container{
+      background-color: #feffff;
+      & p{
+        color: black;
       }
+    }
+    & .slide-open-toggle{
+      top: 12rem;
+    }
+    & .slide-open-content{
+      opacity: 1;
     }
     & .slide-open-content {
       background-color: #feffff;
