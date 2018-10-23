@@ -652,6 +652,14 @@
       left: -10%;
       top: 0;
       width: calc(100% / 3 + 50px + 100px);
+      & .extra-content-item {
+        position: absolute;
+        width: 50%;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-40%);
+        transform: translate(-40%);
+      }
     }
     &:nth-of-type(2) {
       width: calc(100% / 3 + 150px);
@@ -666,6 +674,14 @@
     &:nth-of-type(3) {
       right: 0;
       left: unset;
+      & .extra-content-item {
+        position: absolute;
+        width: 50%;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-40%);
+        transform: translate(-40%);
+      }
     }
   }
   & .extra-content-inner {
@@ -694,7 +710,7 @@
     width: 80%;
     top: 50%;
     left: 50%;
-    transform: translate(-30%, 0);
+    transform: translate(-50%, 0);
     & h2 {
       & span {
         background-color: #00a8e7;
