@@ -38,22 +38,20 @@ get_header();?>
     </div>
     <div class="slide-open-container slide-open-container1">
       <div class="slide-open-toggle">
-        <svg viewBox="0 0 59 60" xmlns="http://www.w3.org/2000/svg" class="litf-toggle-action__icon">
-          <g fill="none">
-            <circle fill="#228ACB" cx="29.6" cy="29.7" r="29.4"></circle>
-            <circle fill="#FFF" cx="29.6" cy="29.7" r="16.5"></circle>
-            <path class="litf-toggle-action__icon__cross" fill="#228ACB" d="M37.3 27.5L31.8 27.5 31.8 22 27.5 22 27.5 27.5 22 27.5 22 31.8 27.5 31.8 27.5 37.3 31.8 37.3 31.8 31.8 37.3 31.8z"></path>
-          </g>
-        </svg>
+      <svg width="74px" height="74px" viewBox="0 0 74 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <image id="plussign" x="0" y="0" width="74" height="74" xlink:href="data:image/png;base64,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"></image>
+        </g>
+      </svg>
       </div>
       <div class="slide-open-content closed" style='background-image: linear-gradient(rgba(102, 149, 164, 0.45), rgba(102, 149, 164, 0.45)),url("<?php the_field('block1_image')?>");'>
       </div>
       <div class="slide-open-quote">
         <div class="quote-text">
-          <p><?php the_field('block1_quote'); ?></p>
+          <?php the_field('block1_quote'); ?>
         </div>
         <div class="quote-author">
-          <p><?php the_field('block1_author'); ?></p>
+          <?php the_field('block1_author'); ?>
         </div>
       </div>
       <div class="slide-open-content-inner-container closed">
@@ -76,10 +74,10 @@ get_header();?>
           </div>
           <div class="slide-open-quote">
             <div class="quote-text">
-              <p><?php the_field('block2_quote'); ?></p>
+              <?php the_field('block2_quote'); ?>
             </div>
             <div class="quote-author">
-              <p><?php the_field('block2_author'); ?></p>
+              <?php the_field('block2_author'); ?>
             </div>
           </div>
         </div>
@@ -204,10 +202,10 @@ get_header();?>
           </div>
           <div class="slide-open-quote">
             <div class="quote-text">
-              <p><?php the_field('block4_quote'); ?></p>
+              <?php the_field('block4_quote'); ?>
             </div>
             <div class="quote-author">
-              <p><?php the_field('block4_author'); ?></p>
+              <?php the_field('block4_author'); ?>
             </div>
           </div>
         </div>
@@ -221,10 +219,10 @@ get_header();?>
   </div>
   <div class="slide-open-quote">
     <div class="quote-text">
-      <p><?php the_field('block5_quote'); ?></p>
+      <?php the_field('block5_quote'); ?>
     </div>
     <div class="quote-author">
-      <p><?php the_field('block5_author'); ?></p>
+      <?php the_field('block5_author'); ?>
     </div>
   </div>
 </div>
@@ -243,13 +241,11 @@ get_header();?>
     </div>
     <div class="slide-open-container slide-open-container2">
       <div class="slide-open-toggle">
-        <svg viewBox="0 0 59 60" xmlns="http://www.w3.org/2000/svg" class="litf-toggle-action__icon">
-          <g fill="none">
-            <circle fill="#228ACB" cx="29.6" cy="29.7" r="29.4"></circle>
-            <circle fill="#FFF" cx="29.6" cy="29.7" r="16.5"></circle>
-            <path class="litf-toggle-action__icon__cross" fill="#228ACB" d="M37.3 27.5L31.8 27.5 31.8 22 27.5 22 27.5 27.5 22 27.5 22 31.8 27.5 31.8 27.5 37.3 31.8 37.3 31.8 31.8 37.3 31.8z"></path>
-          </g>
-        </svg>
+      <svg width="74px" height="74px" viewBox="0 0 74 74" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <image id="plussign" x="0" y="0" width="74" height="74" xlink:href="data:image/png;base64,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"></image>
+        </g>
+      </svg>
       </div>
       <div class="slide-open-content closed">
       </div>
@@ -345,7 +341,7 @@ get_header();?>
     <div class="text"><?php the_field('block9_text'); ?></div>
     <div class="button">
         <span class="button-text">
-         <a href="<?php the_field('block9_button_link'); ?>" target="_blank"><?php the_field('block9_button_text'); ?></a>
+         <?php the_field('block9_button_text'); ?>
         </span>
         <span class="button-icon">
           <svg height="13" viewBox="0 0 42 13" width="42" xmlns="http://www.w3.org/2000/svg">

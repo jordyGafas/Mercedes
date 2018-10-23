@@ -162,7 +162,7 @@ export const barbaInit = () => {
       );
     },
     fadeOut: function() {
-      showLoader();
+      //showLoader();
       const oldContainer = this.oldContainer;
       return TweenLite.fromTo(
         oldContainer,
@@ -189,15 +189,15 @@ export const barbaInit = () => {
           visibility: "visible",
           delay: 0.4,
           onStart: function() {
+
+          },
+          onComplete: function() {
             if (window.pageYOffset > 0) {
               window.scrollTo(0, 0);
             }
-          },
-          onComplete: function() {
             TweenLite.set(_old, {
               display: "none"
             });
-            hideLoader();
             _this.done();
           }
         }
