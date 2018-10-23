@@ -252,7 +252,7 @@ get_header();?>
       <div class="slide-open-content-inner-container closed">
           <div class="slide-open-content-inner">
           <p>
-            <?php the_field('block1_hidden_text') ?>
+            <?php the_field('block6_hidden_text') ?>
           </p>
         </div>
       </div>
