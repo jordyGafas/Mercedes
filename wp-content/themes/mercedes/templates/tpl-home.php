@@ -338,7 +338,7 @@ get_header();?>
     <div class="text"><?php the_field('block9_text'); ?></div>
     <div class="button">
         <span class="button-text">
-         <?php the_field('block9_button_text'); ?>
+         <a href="<?php the_field('block9_button_link'); ?>" target="_blank"><?php the_field('block9_button_text'); ?></a>
         </span>
         <span class="button-icon">
           <svg height="13" viewBox="0 0 42 13" width="42" xmlns="http://www.w3.org/2000/svg">
