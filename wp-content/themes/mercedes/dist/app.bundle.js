@@ -31605,6 +31605,17 @@ const openSlides = () => {
       button2.classList.toggle("closed");
     });
   }
+
+  var readMore = document.querySelector(".read-more");
+
+  if (readMore != null) {
+    readMore.addEventListener("click", function () {
+      document.querySelector(".block1 h2").scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
+    });
+  }
 };
 
 /***/ })

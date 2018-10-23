@@ -22,7 +22,9 @@ export const openSlides = () => {
   }
 
   var slider2 = document.querySelector(".slide-open-container2");
-  var button2 = document.querySelector(".slide-open-container2 .slide-open-toggle");
+  var button2 = document.querySelector(
+    ".slide-open-container2 .slide-open-toggle"
+  );
   var closedContent2 = document.querySelector(
     ".slide-open-container2 .slide-open-content"
   );
@@ -35,6 +37,16 @@ export const openSlides = () => {
       closedContent2.classList.toggle("closed");
       openContent2.classList.toggle("closed");
       button2.classList.toggle("closed");
+    });
+  }
+
+  var readMore = document.querySelector(".read-more");
+  if (readMore != null) {
+    readMore.addEventListener("click", function() {
+      document.querySelector(".block1 h2").scrollIntoView({
+        behavior: "smooth",
+        block: "start"
+      });
     });
   }
 };

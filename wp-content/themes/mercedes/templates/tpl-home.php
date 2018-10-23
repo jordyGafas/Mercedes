@@ -14,7 +14,7 @@ get_header();?>
       <div class="intro">
         <?php the_field('intro')?>
       </div>
-      <div class="button">
+      <div class="button read-more">
         <span class="button-text">
           Lees verder
         </span>
