@@ -16,7 +16,7 @@ get_header();?>
       </div>
       <div class="button read-more">
         <span class="button-text">
-          Lees verder
+          <?php the_field('block1_button_text')?>
         </span>
         <span class="button-icon">
           <svg height="13" viewBox="0 0 42 13" width="42" xmlns="http://www.w3.org/2000/svg">
