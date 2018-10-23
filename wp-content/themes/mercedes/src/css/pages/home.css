@@ -651,7 +651,7 @@
     &:nth-of-type(1) {
       left: -10%;
       top: 0;
-      width: calc(100% / 3 + 50px + 10%);
+      width: calc(100% / 3 + 50px + 100px);
     }
     &:nth-of-type(2) {
       width: calc(100% / 3 + 150px);
