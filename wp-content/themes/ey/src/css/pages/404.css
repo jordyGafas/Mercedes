@@ -1,0 +1,41 @@
+/* ----------------------------------------
+  ERROR 404
+---------------------------------------- */
+.error404 {
+  & .menu-trigger {
+    display: none;
+  }
+	& .error-container {
+		background-color: var(--color-primary);
+		position: relative;
+		height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+	& .error-container__inner {
+		width: 90%;
+		max-width: 70rem;
+		z-index: 2;
+		position: relative;
+		text-align: center;
+		& h1 {
+      color: white;
+			margin-bottom: 3rem;
+      font-size: 3.4rem;
+      line-height: 4.2rem;
+      @media (--bp-md) {
+        font-size: 5rem;
+        margin-bottom: 4rem;
+      }
+		}
+		& a {
+			color: white;
+		}
+	}
+	& .error-container__image {
+		background-position: 50%;
+		opacity: 1;
+	}
+}

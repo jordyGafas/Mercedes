@@ -1,0 +1,357 @@
+.single, .home {
+    & .header_image{
+        & img{
+        width: 100px;
+        }
+    }
+
+    & h1{
+        font-size: 2rem;
+        line-height: 2.5rem;
+        text-transform: uppercase;
+        font-weight: bold;
+        @media (min-width: 600px) {
+            font-size: 2.6rem;
+            line-height: 3rem;
+        }
+        
+    }
+
+    & h2{
+        font-size: 1.8rem;
+        font-weight: bold;
+        line-height: 2rem;
+        max-width: 70rem;
+        margin: 2rem auto;
+        margin-bottom: 0px;
+    }
+    
+    & h3{
+        font-size: 1.4rem;
+        line-height: 2rem;
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+    }
+
+    & .intro{
+        margin-top: 6rem;
+        font-weight: bold;
+        @media (min-width: 936px) {
+            margin-top: 3rem;
+        }
+    }
+
+    & p{
+        max-width: 70rem;
+        margin: 2rem auto;
+        margin-top: 5px;
+    }
+}
+
+.header_image{
+    height: 70VH;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.title-block{
+    background-color: var(--color-yellow);
+    display: flex;
+    max-width: 80rem;
+    padding: 10px;  
+    padding-bottom: 20px;  
+    margin: auto;
+    position: relative;
+    margin-top: -50px;
+    & .title{
+        
+    }
+    
+    &:before{
+        content: " ";
+        width: 0;
+        height: 0;
+        border-bottom: 35px solid white;
+        border-right: 35px solid transparent;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
+.dateContainer{
+    padding-right: 1rem;
+    border-right: 1px solid rgba(0,0,0,0.2);
+    text-align: center;
+    & .day{
+        font-weight: bold;
+        font-size: 2.2rem;
+    }
+    & .month{
+        letter-spacing: 0.2px;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+    & .year{
+        letter-spacing: 0.2px;
+        text-transform: uppercase;
+        font-size: 1.1rem;
+        font-weight: bold;
+    }
+}
+
+.titlecontainer{
+    margin: .5rem 0px 2rem 1.5rem;
+}
+
+.socialContainer{
+    background-color: rgb(133, 155, 161);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translate(0,100%);
+    display: flex;
+    @media (min-width: 936px) {
+        top: 0;
+        bottom: unset;
+        right: 0;
+        transform: translate(100%,0);
+        display: block;
+    }
+    & .socialIcon{
+        text-align: center;
+        color: white;
+        padding: 0.7rem 1rem;
+    }
+}
+
+p.kader{
+    background-color: rgb(144,165,171);
+    color: white;
+    padding: 3rem 2rem;
+    max-width: 70rem;
+    margin-top: 5rem;
+    position: relative;
+     @media (min-width: 936px) {
+        padding: 5rem;
+     }
+    &:before{
+        content: " ";
+        width: 0;
+        height: 0;
+        border-bottom: 35px solid white;
+        border-right: 35px solid transparent;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    &:after{
+        content: " ";
+        width: 0;
+        height: 0;
+        border-top: 35px solid white;
+        border-left: 35px solid transparent;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+
+.wrapper-quote{
+    
+    max-width: 55rem;
+    margin: auto;
+    border-top: 1px solid rgba(0,0,0,.2);
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    padding: 4rem 0;
+    margin: 3rem auto;
+    align-items: center;
+    position: relative;
+
+    @media (min-width: 600px) {
+        margin-top: 3rem;
+        display: flex;
+        margin: 6rem auto;
+    }
+
+    & .quote-image{
+        background-image: url(/ey/wp-content/uploads/2018/09/Jan-Grauls.jpg);
+        min-width: 150px;
+        min-height: 150px;
+        width: 150px;
+        height: 150px;
+        background-position: center;
+        background-size: cover;
+        border-radius: 9999px;
+        margin: auto;
+        position: relative;
+
+        &:after{
+            content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 409 409" class="icon icon--quote"><g fill="none" fill-rule="evenodd"><circle cx="204.5" cy="204.5" r="204.5" fill="#FFF"></circle><path fill="#FFD400" fill-rule="nonzero" d="M194.7 225.8l9.9 10.2 10.1-9.9-9.9-10.2"></path><path fill="#FFD400" fill-rule="nonzero" d="M206.5 37.6c-92.7 0-167.8 75.1-167.8 167.8 0 42.3 15.6 80.8 41.4 110.3l-33.8 33.8c-13 13.1-8.6 23.7 9.8 23.7h150.4c92.7 0 167.8-75.1 167.8-167.8 0-92.7-75.1-167.8-167.8-167.8zm77.7 229.6l-63.1-.9-16.5-30.3-17.4 29.9-58.8-.8s-.8-31.5 3.5-38c4.8-7.2 20.6-11.6 36.3-17.9 15.7-6.3 19.4-8.5 19.4-8.5l.4-14.9s-5.8-4.6-7.4-18.7c-3.7 1-7.4-5.5-7.6-9-.2-3.3.7-12.5 5.1-11.5-.8-6.9-1.4-13.1-1-16.4 1.3-12 13.3-24.5 31.5-24.3 18.2.2 29.8 13.1 30.8 25.1.3 3.3-.5 9.5-1.5 16.4 4.5-.9 5 8.3 4.8 11.6-.3 3.4-4.2 9.9-7.8 8.8-2 14-7.9 18.4-7.9 18.4l-.1 15s3.7 2.3 19.2 9 31.2 11.5 35.8 18.8c4 6.7 2.3 38.2 2.3 38.2z"></path></g></svg>');
+            position: absolute;
+            width: 48px;
+            transform: translate3d(-50%,0,0);
+            bottom: -20px;
+            left: 50%;
+        }
+    }
+
+    & .svg{
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        font-size: 1.3em;
+        margin: 0 auto;
+        height: 40%;
+        max-height: 6em;
+        -webkit-transition: .2s;
+        transition: .2s;
+        -webkit-transition-delay: .2s;
+        transition-delay: .2s;
+        -webkit-transform: translate3d(-50%,2em,0);
+        transform: translate3d(-50%,2em,0);
+        -webkit-transform: translate3d(-50%,0,0);
+        transform: translate3d(-50%,0,0);
+        bottom: 0;
+        left: 75px;
+        width: 48px;
+    }
+
+    & .quote-content{
+        color: #90a5ab;
+        margin-top: 2rem;
+        @media (min-width: 600px) {
+            margin-left: 3rem;
+            margin-top: 0rem;
+        }
+        & .quote-text{
+            border-bottom: 1px solid rgba(0,0,0,.1);
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 2rem;
+            letter-spacing: 1px;
+            text-align:center;
+            margin-top: 3rem;
+             @media (min-width: 600px) {
+                text-align:left;
+                margin-top: 0rem;
+             }
+        }
+
+        & .quote-text-sub{
+            display: flex;
+            justify-content: space-between;
+            & .quote-author{
+                font-size: 1rem;
+                font-weight: bold;
+                max-width: 63%;
+                @media (min-width: 768px) {
+                    max-width: unset;
+                }
+                
+            }
+            & a{
+                font-size: 1.2rem;
+                background-color: #90a5ab;
+                color: white;
+                padding: 7px 20px;
+                border-radius: 3px;
+            }
+        }
+    }
+}
+
+.wrapper-quote.swap{
+    @media (min-width: 600px) {
+        & .quote-image{
+            order: 2;
+        }
+        & .quote-content{
+            margin-right: 3rem;
+            margin-left: 0rem;
+        }
+    }
+}
+
+.contactgegevens-wrapper{
+    max-width: 70rem;
+    margin: auto;
+    margin-bottom: 12rem;
+    margin-top: 5rem;
+    position: relative;
+    justify-content: space-between;
+
+    @media (min-width: 768px) {
+        display: flex;
+        margin: auto;
+        margin-bottom: 12rem;
+        margin-top: 5rem;
+    }
+
+    & .block-gegevens{
+        background-color: rgb(237,237,237);
+        text-align: center;
+        max-width: 30rem;
+        width: 100%;
+        margin: auto;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 260px;
+        justify-content: center;
+        margin-bottom: 2rem;
+        &:first-of-type{
+            @media (min-width: 768px) {
+                margin-bottom: 0rem;
+            }
+        }
+        @media (min-width: 768px) {
+            width: 50%;
+            margin: 0;
+
+        }
+        & .name{
+            color: rgb(93,106,110);
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        & .gegevens{
+            margin: 2rem auto;
+            font-size: 1.4rem;
+            line-height: 1.8rem;
+            color: rgb(157, 175, 179);
+            max-width: 60%;
+            & a{
+                text-decoration: underline;
+            }
+        }
+
+        & .linkedin-wrapper{
+            background: url('data:image/svg+xml;utf8,<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><ellipse fill="#FFF" cx="16" cy="16.5" rx="12" ry="11.5"/><path d="M24.98 23.54v-6.247c0-3.346-1.787-4.904-4.169-4.904-1.922 0-2.783 1.058-3.263 1.8v-1.544h-3.622c.048 1.023 0 10.895 0 10.895h3.622v-6.085c0-.324.023-.65.12-.882.26-.65.856-1.324 1.856-1.324 1.311 0 1.835.998 1.835 2.462v5.83h3.62v-.001zM10.11 11.158c1.263 0 2.05-.837 2.05-1.883-.024-1.068-.787-1.881-2.026-1.881-1.238 0-2.048.812-2.048 1.881 0 1.046.786 1.883 2.002 1.883h.022zM16 32C7.164 32 0 24.836 0 16 0 7.163 7.164 0 16 0s16 7.163 16 16c0 8.836-7.164 16-16 16zm-4.078-8.46V12.645h-3.62V23.54h3.62z" fill="#5C696D"/></g></svg>');
+            margin: 0 auto;
+            width: 32px;
+            height: 32px;
+            position: relative;
+            &.no-link{
+                width: 0;
+                height: 0;
+            }
+            &:after{
+                content: ' ';
+                width: 48px;
+                height: 1px;
+                margin: auto;
+                background-color: var(--color-yellow);
+                position: absolute;
+                bottom: -2rem;
+                transform: translate(-50%, 0);
+            }
+        }
+        
+    }
+}

@@ -1,0 +1,284 @@
+/* ----------------------------------------
+  HEADER
+---------------------------------------- */
+.l-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  width: 100%;
+  @media (--bp-md) {
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 48px;
+      background-color: #0e2a4c;
+      z-index: -1;
+    }
+  }
+  & .l-header__inner {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+  }
+  & .l-header__brand {
+    @media (--bp-md) {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 5;
+    }
+    & a {
+      background: #18457c;
+      display: block;
+      width: 6rem;
+      height: 6rem;
+      overflow: hidden;
+      transition: .2s ease;
+      color: #fff;
+      @media (--bp-md) {
+        box-shadow: 0 3px 15px 2px rgba(0,0,0,0.3);
+        transition: .2s ease;
+        color: #fff;
+      }
+      @media (min-width: 1200px) {
+        width: 11rem;
+        height: 11rem;
+      }
+      & img {
+        width: 100%;
+      }
+			& svg {
+				width: 100%;
+    		height: 100%;
+			}
+    }
+  }
+  & .l-header__nav {
+    display: none;
+    @media (--bp-md) {
+      padding-left: 81px;
+      display: block;
+    }
+    @media (min-width: 936px) {
+    	padding-left: 105px;
+    }
+    @media (min-width: 1200px) {
+    	padding-left: 135px;
+    }
+    & ul {
+        padding-left: 0;
+        list-style: none;
+        margin-bottom: 0;
+        position: relative;
+      & li {
+        display: inline-block;
+        padding-left: 0;
+        padding-right: 0;
+        & a {
+          text-decoration: none;
+          font-size: 1.4rem;
+          line-height: 4.8rem;
+          height: 4.8rem;
+          color: #fff;
+          padding: 0 1.4rem;
+          display: inline-block;
+          position: relative;
+          & span {
+            display: inline-block;
+            font-size: 1.1rem;
+            line-height: 1.6rem;
+            padding: 0 .2rem;
+            background: #e14232;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-left: .3rem;
+          }
+        }
+      }
+    }
+  }
+  & .l-header__lang {
+    display: none;
+    margin-left: auto;
+    @media (--bp-md) {
+      display: block;
+    }
+    & .lang-list {
+      & li {
+        & a {
+          height: 4.8rem;
+          line-height: 4.8rem;
+        }
+      }
+    }
+  }
+  & .l-header__clientlogo {
+      top: 20px;
+      right: -20px;
+      -webkit-transform: translate3d(-50%,0,0);
+      transform: translate3d(-50%,0,0);
+      width: 70px;
+      position: absolute;
+      left: unset;
+    @media (--bp-md) {
+      top: 7rem;
+      right: -50px;
+      -webkit-transform: translate3d(-50%,0,0);
+      transform: translate3d(-50%,0,0);
+      width: 100px;
+      position: absolute;
+      left: unset;
+    }
+    & a {
+      display: block;
+      max-width: 12rem;
+      @media (--bp-md) {
+        max-width: 20rem;
+      }
+    }
+  }
+  &.l-header--lecho {
+    @media (--bp-md) {
+      &:after {
+        background-color: #751414;
+      }
+    }
+  }
+}
+.sticky-is-active {
+  & .randstad-logo-small,
+  & .returning-to-work-small {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate3d(0, 0, 0);
+  }
+  & .menu-trigger {
+    top: 2rem;
+    right: 2.5rem;
+    opacity: 1;
+    pointer-events: auto;
+    @media (--bp-md) {
+      top: 4rem;
+      right: 5rem;
+    }
+  }
+  & .page-nav {
+    pointer-events: auto;
+    transform: translate3d(0, -50%, 0);
+  }
+	&.sticky-is-active--blue {
+		& .randstad-logo-small {
+			& svg {
+				& g {
+					fill: var(--color-primary);
+				}
+			}
+		}
+		& .returning-to-work-small {
+			& span {
+				color: var(--color-primary);
+			}
+		}
+	}
+}
+
+/* ----------------------------------------
+  MENU TRIGGER
+---------------------------------------- */
+.menu-trigger {
+  position: fixed;
+  top: 2rem;
+  right: 2rem;
+  z-index: 90;
+  transition: all .4s var(--easeInOutCubic);
+  @media (--bp-md) {
+		top: 9rem;
+    right: 5rem;
+  }
+}
+/* ----------------------------------------
+  RANDSTAD LOGO - SMALL
+---------------------------------------- */
+.randstad-logo-small {
+  position: fixed;
+  top: 2rem;
+  left: 2.5rem;
+  z-index: 90;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate3d(0, 2rem, 0);
+  transition: all .4s var(--easeInOutCubic);
+  @media (--bp-md) {
+    top: 4rem;
+    left: 5rem;
+  }
+}
+/* ----------------------------------------
+  RETURNING TO WORK LOGO
+---------------------------------------- */
+.returning-to-work-small {
+  position: fixed;
+  top: 2rem;
+  right: 7rem;
+  z-index: 90;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate3d(0, 2rem, 0);
+  transition: all .4s var(--easeInOutCubic);
+  @media (--bp-md) {
+    top: 4rem;
+    right: 9rem;
+  }
+  & span {
+    display: block;
+    font-size: 2.2rem;
+    color: #FFFFFF;
+    letter-spacing: -1px;
+    &:last-child {
+      margin-top: 0.5rem;
+      margin-left: 4rem;
+    }
+    @media (--bp-md) {
+      font-size: 3.2rem;
+      &:last-child {
+        margin-left: 5rem;
+      }
+    }
+  }
+}
+/* ----------------------------------------
+  LANGUAGE LIST
+---------------------------------------- */
+.lang-list {
+  & li {
+    display: inline-block;
+    &:not(:last-child) {
+      margin-right: .6rem;
+    }
+    & a {
+      color: white;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      opacity: .7;
+      transition: all .3s ease;
+    }
+    &.active {
+      & a {
+        opacity: 1;
+      }
+    }
+  }
+}
+.is-desktop {
+  & .lang-list {
+    & li {
+      & a:hover {
+        opacity: 1;
+      }
+    }
+  }
+}
