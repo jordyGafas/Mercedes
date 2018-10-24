@@ -428,15 +428,19 @@
       max-width: 14rem;
       @media (--bp-lg) {
         max-width: 34rem;
+        right: 3rem;
+      }
+      @media (--bp-xl) {
+        right: 10rem;
       }
       & .quote-text {
         font-size: 1.6rem;
         font-style: italic;
         line-height: 2.1rem;
         @media (--bp-lg) {
-          font-size: 2.8rem;
+          font-size: 3.5rem;
           font-style: italic;
-          line-height: 2.8rem;
+          line-height: 4.5rem;
         }
       }
     }
@@ -472,6 +476,9 @@
         transform: skewY(10deg);
         left: 0;
         top: 35vh;
+         @media (--bp-lg) {
+          top: 27vh;
+         }
       }
     }
     & .city-image {
@@ -482,6 +489,7 @@
       background-position: center;
       @media (--bp-lg) {
         padding-top: 37.25vw;
+        width: 60vw;
       }
       &:before {
         content: " ";
@@ -741,6 +749,7 @@
         opacity: 0.7;
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: unset;
       }
     }
     & .slide-open-quote {

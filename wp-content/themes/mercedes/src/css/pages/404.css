@@ -21,13 +21,14 @@
 		position: relative;
 		text-align: center;
 		& h1 {
-      color: white;
+      color: black;
 			margin-bottom: 3rem;
       font-size: 3.4rem;
       line-height: 4.2rem;
       @media (--bp-md) {
         font-size: 5rem;
-        margin-bottom: 4rem;
+				line-height: 6rem;
+        margin-bottom: 6rem;
       }
 		}
 		& a {
@@ -37,5 +38,6 @@
 	& .error-container__image {
 		background-position: 50%;
 		opacity: 1;
+		display: none;
 	}
 }
