@@ -62,7 +62,7 @@ $mode = get_field('mode', 'option');
 </head>
 <body>
 	<div id="barba-wrapper">
-		<div <?php body_class('barba-container'); ?> data-namespace="<?php if (is_home()) { ?>home<?php } elseif ( is_single() ) { ?>article<?php } else { ?>page<?php } ?>">
+		<div <?php body_class('barba-container'); ?> data-namespace="<?php if (is_page_template( 'templates/tpl-home.php' )) { ?>home<?php } elseif ( is_single() ) { ?>article<?php } else { ?>page<?php } ?>">
 			<?php get_template_part('templates/articles', 'overlay'); ?>
 			<header class="l-header<?php if ( $blog_id == 2 ) { ?> l-header--lecho<?php } ?>">
 				<div class="l-header__inner row">

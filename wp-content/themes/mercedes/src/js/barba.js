@@ -67,8 +67,6 @@ export const barbaInit = () => {
   Barba.Dispatcher.on("linkClicked", el => {
     lastClickEl = el;
   });
-  singleProductSliderInit();
-  openSlides();
   //sideMenuButton();
   /* ----------------------------------
     VIEWS
@@ -84,11 +82,12 @@ export const barbaInit = () => {
       _html.classList.add("home-is-loaded");
       stickyFooter();
       scrollIndicator();
+      sideMenuButton();
+      singleProductSliderInit();
       openSlides();
-      //sideMenuButton();
     },
     onLeave: function() {
-      removeAllEventListeners();
+      //removeAllEventListeners();
     },
     onLeaveCompleted: function() {}
   });
@@ -103,7 +102,7 @@ export const barbaInit = () => {
       _html.classList.add("article-is-loaded");
       stickyFooter();
       scrollIndicator();
-      //sideMenuButton();
+      sideMenuButton();
     },
     onLeave: function() {
       _body.classList.remove("is-article");
