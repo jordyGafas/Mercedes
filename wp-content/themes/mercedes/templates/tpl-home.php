@@ -340,13 +340,15 @@ get_header();?>
   <?php $loop = new WP_Query( $args ); ?>
     <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
       <div class="extra-content">
+      <a href="<?php echo get_permalink(); ?>">
         <div class="extra-content-inner">
           <div class="background-image" style='background-image: url("<?php the_post_thumbnail_url();?>");'>
           </div>
           <div class="extra-content-item">
-            <h2><span><a href="<?php echo get_permalink(); ?>"><?php the_title() ?></a></span></h2>
+            <h2><span><?php the_title() ?></span></h2>
           </div>
         </div>
+        </a>
     </div>
     <?php endwhile; ?>
   <?php wp_reset_postdata(); ?>

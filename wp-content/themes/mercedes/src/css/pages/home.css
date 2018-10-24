@@ -1014,6 +1014,12 @@
     height: 20rem;
     transform-origin: bottom left;
     position: relative;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+      & .background-image{
+        transform: scale(1.05);
+      }
+    }
     @media (--bp-lg) {
       height: 40rem;
     }
