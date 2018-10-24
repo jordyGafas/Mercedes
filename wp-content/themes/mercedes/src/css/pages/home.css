@@ -658,7 +658,7 @@
           margin-left: 15rem;
         }
         &.slider {
-          margin-top: 5rem;
+          margin-top: 7rem;
           @media (--bp-lg) {
             margin-top: 5rem;
             max-width: 36rem;
