@@ -289,7 +289,7 @@
     top: 0;
     height: 120rem;
     width: 100%;
-    background-color: #133c4e;
+    background-color: #74a9b8;
     opacity: 1;
     transition: all 0.3s ease-in-out;
     @media (--bp-lg) {
@@ -303,7 +303,8 @@
   & .slide-open-content-inner {
     margin: auto;
     width: 80%;
-    margin-top: 35rem;
+    margin-top: 25rem;
+    max-width: 110rem;
     & p {
       max-width: unset !important;
     }
@@ -889,10 +890,11 @@
       }
     }
     & .slide-open-content-inner-container {
-      background-color: #feffff;
+      background-color: #3a8599;
       height: 101rem;
+      text-align: right;
       & p {
-        color: black;
+        color: white;
       }
     }
     & .slide-open-toggle {
@@ -905,6 +907,7 @@
       margin-top: 27rem;
       position: relative;
       z-index: 2;
+      max-width: 150rem;
     }
     & .slide-open-content {
       background-color: #feffff;
