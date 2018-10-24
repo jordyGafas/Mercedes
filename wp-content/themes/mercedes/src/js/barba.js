@@ -8,6 +8,8 @@ import { openSlides } from "./utils/openSlides";
 import { TweenLite } from "gsap/TweenLite";
 import { CSSPlugin } from "gsap/CSSPlugin";
 import { TimelineLite } from "gsap/TimelineLite";
+import Rellax from "./vendor/rellax.js";
+import scrollAnimations from './vendor/scrollAnimations'
 
 import Swiper from "swiper";
 // Single Product Slider
@@ -85,6 +87,8 @@ export const barbaInit = () => {
       sideMenuButton();
       singleProductSliderInit();
       openSlides();
+      //var rellax = new Rellax('.rellax');
+      scrollAnimations();
     },
     onLeave: function() {
       //removeAllEventListeners();

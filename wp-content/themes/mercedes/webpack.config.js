@@ -52,7 +52,7 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        loader: 'babel-loader'
+        loader: "imports-loader?define=>false"
       },
       {
 		    test: /\.svg/,
@@ -73,10 +73,14 @@ module.exports = {
   ],
   devtool: 'source-map',
   resolve: {
+    alias: {
+      "TweenLite": "gsap/src/uncompressed/TweenLite"
+    },
     modules: [
       path.resolve('node_modules'),
       path.resolve(__dirname, 'src'),
-      path.resolve(__dirname, 'src/css')
+      path.resolve(__dirname, 'src/css'),
+      
     ],
   }
 };
