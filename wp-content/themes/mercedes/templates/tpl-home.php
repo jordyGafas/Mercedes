@@ -44,7 +44,7 @@ get_header();?>
         </g>
       </svg>
       </div>
-      <div class="slide-open-content closed" style='background-image: linear-gradient(rgba(102, 149, 164, 0.45), rgba(102, 149, 164, 0.45)),url("<?php the_field('block1_image')?>");'>
+      <div id="slide1" class="slide-open-content rellax closed" style='background-image: url("<?php the_field('block1_image')?>");'>
       </div>
       <div class="slide-open-quote">
         <div class="quote-text">

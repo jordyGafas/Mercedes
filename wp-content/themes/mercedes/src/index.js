@@ -20,7 +20,7 @@
   	init: function() {
   		browserClasses();
   		lazyLoad();
-  		barbaInit();
+      barbaInit();
   	}
   };
   panda.init();

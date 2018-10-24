@@ -224,6 +224,7 @@
     &.closed {
       height: 60rem;
       opacity: 1;
+      transition: unset;
     }
   }
 
@@ -303,6 +304,7 @@
       height: 100rem;
     }
     &.closed {
+      transition: unset;
       opacity: 0;
     }
   }
