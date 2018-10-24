@@ -804,6 +804,12 @@
         opacity: 0.7;
         background-size: cover;
         background-repeat: no-repeat;
+        background-position: -240px;
+      }
+      @media (--bp-xxl) {
+        background-position: -120px;
+      }
+      @media (min-width: 1920px) {
         background-position: unset;
       }
     }
@@ -818,7 +824,7 @@
       left: 50%;
       transform: translate(-50%, -50%);
       @media (--bp-lg) {
-        left: 26%;
+        left: 28%;
         -webkit-transform: translateY(-50%);
         transform: translateY(-50%);
       }
@@ -1018,8 +1024,8 @@
     transform-origin: bottom left;
     position: relative;
     transition: all 0.3s ease-in-out;
-    &:hover{
-      & .background-image{
+    &:hover {
+      & .background-image {
         transform: scale(1.05);
       }
     }
