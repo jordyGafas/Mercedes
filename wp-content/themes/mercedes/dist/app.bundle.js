@@ -43115,9 +43115,6 @@ const barbaInit = () => {
   const _html = document.documentElement;
   const _body = document.body;
 
-  barba_js__WEBPACK_IMPORTED_MODULE_1___default.a.Dispatcher.on("linkClicked", el => {
-    lastClickEl = el;
-  });
   //sideMenuButton();
   /* ----------------------------------
     VIEWS
@@ -43128,6 +43125,7 @@ const barbaInit = () => {
     namespace: "home",
     onEnter: function() {
       _body.classList.add("is-home");
+      console.log("prev home", localStorage.getItem("prev"));
       if (localStorage.getItem("prev") == "home") {
         document.querySelector(".block9").scrollIntoView({
           behavior: "instant",
@@ -43144,6 +43142,7 @@ const barbaInit = () => {
       Object(_utils_openSlides__WEBPACK_IMPORTED_MODULE_6__["openSlides"])();
       //var rellax = new Rellax('.rellax');
       Object(_vendor_scrollAnimations__WEBPACK_IMPORTED_MODULE_11__["default"])();
+      localStorage.setItem("prev", "");
     },
     onLeave: function() {
       //removeAllEventListeners();
@@ -43156,11 +43155,13 @@ const barbaInit = () => {
     namespace: "article",
     onEnter: function() {
       _body.classList.add("is-article");
-      console.log("prev stat", barba_js__WEBPACK_IMPORTED_MODULE_1___default.a.HistoryManager.prevStatus().namespace);
+      console.log("prev stat", barba_js__WEBPACK_IMPORTED_MODULE_1___default.a.HistoryManager.prevStatus());
       localStorage.setItem("prev", "");
-      if (barba_js__WEBPACK_IMPORTED_MODULE_1___default.a.HistoryManager.prevStatus().namespace == "home") {
-        console.log("Bingo");
-        localStorage.setItem("prev", "home");
+      if (barba_js__WEBPACK_IMPORTED_MODULE_1___default.a.HistoryManager.prevStatus()!=null) {
+        if (barba_js__WEBPACK_IMPORTED_MODULE_1___default.a.HistoryManager.prevStatus().namespace == "home") {
+          console.log("Bingo");
+          localStorage.setItem("prev", "home");
+        }
       }
     },
     onEnterCompleted: function() {
@@ -43175,10 +43176,6 @@ const barbaInit = () => {
       console.log("prev stat", barba_js__WEBPACK_IMPORTED_MODULE_1___default.a.HistoryManager.prevStatus().namespace);
     },
     onLeaveCompleted: function() {
-      if (barba_js__WEBPACK_IMPORTED_MODULE_1___default.a.HistoryManager.prevStatus().namespace == "home") {
-        console.log("Bingo");
-        window.scrollTo(0, 2000);
-      }
     }
   });
 
@@ -43266,9 +43263,12 @@ const barbaInit = () => {
           onStart: function() {},
           onComplete: function() {
             if (window.pageYOffset > 0) {
-              if(localStorage.getItem("prev")=="home" && barba_js__WEBPACK_IMPORTED_MODULE_1___default.a.HistoryManager.currentStatus().namespace!="article"){
+              if (
+                localStorage.getItem("prev") == "home" &&
+                barba_js__WEBPACK_IMPORTED_MODULE_1___default.a.HistoryManager.currentStatus().namespace != "article"
+              ) {
                 localStorage.setItem("prev", "");
-              }else{
+              } else {
                 window.scrollTo(0, 0);
               }
             }

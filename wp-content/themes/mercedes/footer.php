@@ -12,8 +12,7 @@ $mode = get_field('mode', 'option');
         <span class="menu-icon__label">Fermer</span>
         <?php } ?>
       <div class="menu-icon__cross" id="cross">
-        <span class="menu-icon__bar menu-icon__cross__bar"></span>
-        <span class="menu-icon__bar menu-icon__cross__bar"></span>
+        <svg width="16" height="15" xmlns="http://www.w3.org/2000/svg"><path d="M.5.5l14.142 14.142M.5 14.5L14.642.358" stroke="#FFF" fill="none" fill-rule="evenodd" stroke-linecap="square"/></svg>
       </div>
     </a>
     <ul class="navigation__list">
