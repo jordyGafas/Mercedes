@@ -121,7 +121,7 @@ export const casesHoverStates = () => {
  */
 export const sideMenuButton = () => {
   const button = document.querySelector(".mnuicon");
-  const buttonClose = document.querySelector(".menu-icon__label");
+  const buttonClose = document.querySelector(".menu-icon");
   const bodyWrapper = document.querySelector("body");
   if (button) {
     button.addEventListener(
