@@ -15,7 +15,7 @@ export const gaEvents = () => {
       trackLinkedIn.addEventListener('click', function() {
       //console.log("quotes", trackLinkedIn);
         gtag('event', 'click', {
-          'event_category': 'Slides Toggle',
+          'event_category': 'Futur_Mobility_Slides_Toggle',
           'event_label': this.dataset.trackingValue,
           'transport_type': 'beacon'
         });
@@ -33,7 +33,7 @@ export const gaEvents = () => {
   
       trackEmail.addEventListener('click', function() {
         gtag('event', 'click', {
-          'event_category': 'Sliders',
+          'event_category': 'Futur_Mobility_Sliders',
           'event_label': this.dataset.trackingValue,
           'transport_type': 'beacon'
         });
@@ -47,7 +47,7 @@ export const gaEvents = () => {
       youtube.forEach((trackTelephone, index) => {
       trackTelephone.addEventListener('click', function() {
         gtag('event', 'click', {
-          'event_category': 'Youtube',
+          'event_category': 'Futur_Mobility_youtube',
           'event_label': this.dataset.trackingValue,
           'transport_type': 'beacon'
         });
@@ -61,7 +61,7 @@ export const gaEvents = () => {
     SocialMedia.forEach((trackTelephone, index) => {
     trackTelephone.addEventListener('click', function() {
       gtag('event', 'click', {
-        'event_category': 'Social Media',
+        'event_category': 'Futur_Mobility_Social_media',
         'event_label': this.dataset.trackingValue,
         'transport_type': 'beacon'
       });

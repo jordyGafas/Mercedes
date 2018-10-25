@@ -1,4 +1,127 @@
-.home {
+.site-footer {
+  height: 9.6rem;
+}
+
+@media (min-width: 992px) {
+  .site-footer__tijd-connect {
+    max-width: 44.8rem;
+  }
+}
+
+@media (min-width: 768px) .site-footer_tijd-connect_figure {
+  margin-right: 1rem;
+}
+
+.site-footer_tijd-connect_figure svg {
+  width: 14.6rem;
+  height: 14.6rem;
+}
+
+.site-footer_tijd-connect_text {
+  font-size: 1.3rem;
+  line-height: 1.5;
+}
+
+.site-footer__social a {
+  margin-right: 2rem;
+}
+
+.site-footer .mercedes-logo {
+  width: 10rem;
+}
+
+#header,
+#footer {
+  display: none;
+}
+.has-fixed-footer .wrap {
+  padding-bottom: 0;
+}
+hr {
+  display: none;
+}
+.publisher-header {
+  height: 4.8rem;
+}
+
+.publisher-header__nav {
+  margin-left: 15rem;
+  font-size: 1.36rem;
+  font-family: "Open Sans";
+}
+.publisher-header .logo__figure {
+  width: 5.5rem;
+  height: 5.5rem;
+  @media (min-width: 768px) {
+    width: 10.8rem;
+    height: 10.8rem;
+  }
+}
+.site-footer__tijd-connect__figure svg {
+  width: 13.6rem;
+  height: 13.6rem;
+}
+.site-footer__tijd-connect__text {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+}
+.publisher-header .mercedes-logo {
+  display: none;
+}
+@media (min-width: 992px) {
+  .navigation__list__item__anchor {
+    font-size: 3.4rem;
+    padding: 0 6rem;
+  }
+}
+
+.navigation__list__item__call-to-action {
+  bottom: 5rem;
+}
+
+.navigation__footer {
+  padding: 3.5rem 0;
+}
+
+@media (min-width: 992px) {
+  .navigation__footer__testdrive__label {
+    font-size: 2.5rem;
+    line-height: 1.5;
+  }
+}
+
+.navigation__list__item__title {
+  max-width: 35rem;
+}
+
+.navigation__footer__testdrive__button {
+  border-radius: 2.5rem;
+  padding: 2rem 3rem;
+}
+
+.navigation__footer__testdrive__button__icon svg {
+  height: 1.6rem;
+}
+
+.navigation__footer__navigation .nav li a {
+  font-size: 2rem;
+}
+
+.menu-icon__label {
+  font-size: 1.7rem;
+}
+
+@media (min-width: 992px) {
+  .navigation .menu-icon {
+    top: 4.5rem;
+    right: 3.5rem;
+  }
+}
+.navigation_list__item_call-to-action svg {
+    height: 13rem;
+}
+.home,
+.page-template-tpl-home {
   margin-bottom: 68px;
   /* ----------------------------------------
   HERO
@@ -691,7 +814,7 @@
         @media (--bp-xxl) {
           margin-left: 15rem;
         }
-        &.slider {
+        &.slider-swiper {
           margin-top: 7rem;
           @media (--bp-md) {
             margin-top: 10rem;
@@ -960,7 +1083,7 @@
       }
     }
     & .slide-open-toggle {
-        top: 12rem;
+      top: 12rem;
       &.closed {
         transform-origin: center;
         transform: rotate(-45deg);
@@ -1279,7 +1402,10 @@
   }
 
   & .button {
-    padding-right: 3rem;
+    padding-right: 9rem;
+    & .button-text{
+      white-space: nowrap;
+    }
   }
 }
 /* ----------------------------------------

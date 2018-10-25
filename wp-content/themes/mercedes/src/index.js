@@ -2,25 +2,80 @@
   IMPORT CSS
   -----------------------------------------*/
 
-  import css from './css/app.css';
+import css from "./css/app.css";
 
 /*-----------------------------------------
   IMPORT JS
   -----------------------------------------*/
 
-  import browserClasses from './js/utils/bowser';
-  import lazyLoad from './js/utils/lazy';
-  import { barbaInit } from './js/barba';
+import browserClasses from "./js/utils/bowser";
+import lazyLoad from "./js/utils/lazy";
+import { barbaInit } from "./js/barba";
+import scrollAnimations from "./js/vendor/scrollAnimations";
+import { openSlides } from "./js/utils/openSlides";
+import Swiper from "swiper";
+import {gaEvents} from './js/utils/gaEvents';
 
 /*-----------------------------------------
   INIT
   -----------------------------------------*/
 
-  const panda = {
-  	init: function() {
-  		browserClasses();
-  		lazyLoad();
-      barbaInit();
-  	}
-  };
-  panda.init();
+var singleProductSliderInit = function() {
+  console.log("test");
+  var singleProductSlider = new Swiper(".js-single-product-slider", {
+    slidesPerView: 1,
+    allowTouchMove: true,
+    navigation: {
+      nextEl: ".single-product-slider-next",
+      prevEl: ".single-product-slider-prev"
+    },
+    preloadImages: false,
+    lazy: {
+      loadPrevNext: false
+    }
+  });
+
+  var singleProductThumbs = new Swiper(".js-single-product-thumbs", {
+    slidesPerView: 1,
+    allowTouchMove: true,
+    navigation: {
+      nextEl: ".single-product-slider-next",
+      prevEl: ".single-product-slider-prev"
+    },
+    preloadImages: false,
+    lazy: {
+      loadPrevNext: false
+    }
+  });
+
+  if (singleProductSlider) {
+    //singleProductSlider.controller.control = singleProductThumbs;
+  }
+  //singleProductThumbs.controller.control = singleProductSlider;
+
+  var singleProductThumbs = new Swiper(".js-video-text-slider", {
+    slidesPerView: 1,
+    allowTouchMove: true,
+    navigation: {
+      nextEl: ".single-video-slider-next",
+      prevEl: ".single-video-slider-prev"
+    },
+    preloadImages: false,
+    lazy: {
+      loadPrevNext: false
+    }
+  });
+};
+
+const panda = {
+  init: function() {
+    browserClasses();
+    lazyLoad();
+    //barbaInit();
+    singleProductSliderInit();
+    openSlides();
+    scrollAnimations();
+    gaEvents();
+  }
+};
+panda.init();

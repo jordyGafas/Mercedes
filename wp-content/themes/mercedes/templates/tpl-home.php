@@ -135,7 +135,7 @@ get_header();?>
         </div>
       </div>
       <div class="column column2">
-        <div class="block-inner slider">
+        <div class="block-inner slider-swiper">
           <h2>
            <span><?php the_field('block3_title') ?></span>
           </h2>
