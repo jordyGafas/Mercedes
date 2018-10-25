@@ -48,8 +48,7 @@ module.exports = {
       },
       {
         test: /\.js$/,
-        exclude: /node_modules\/(?!(dom7|ssr-window|swiper)\/).*/,
-        loader: 'babel-loader'
+        loader: "imports-loader?define=>false"
       },
       {
 		    test: /\.svg/,

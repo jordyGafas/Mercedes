@@ -43489,17 +43489,15 @@ const casesHoverStates = () => {
  * SIDEMENU BUTTON
  */
 const sideMenuButton = () => {
-  const button = document.querySelector(".menu-icon");
-  const buttonClose = document.querySelector(".close-menu-button");
-  const menu = document.querySelector(".legam-menu");
-  const wrap = document.querySelector("html");
+  const button = document.querySelector(".mnuicon");
+  const buttonClose = document.querySelector(".menu-icon__label");
+  const bodyWrapper = document.querySelector("body");
   if (button) {
     button.addEventListener(
       "click",
       function() {
         console.log("click");
-        menu.classList.remove("closed");
-        wrap.classList.add("unscroll");
+        bodyWrapper.classList.add("nav-open");
       },
       false
     );
@@ -43510,8 +43508,7 @@ const sideMenuButton = () => {
       "click",
       function() {
         console.log("click");
-        menu.classList.add("closed");
-        wrap.classList.remove("unscroll");
+        bodyWrapper.classList.remove("nav-open");
       },
       false
     );
