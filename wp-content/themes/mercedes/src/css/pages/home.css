@@ -215,14 +215,14 @@
     }
   }
   & .slide-open-content {
-    height: 108rem;
+    height: 88rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     transition: all 0.3s ease-in-out;
     opacity: 0;
     @media (--bp-md) {
-      height: 80rem;
+      height: 65rem;
     }
     @media (--bp-lg) {
       height: 100rem;
@@ -245,7 +245,15 @@
     &.closed {
       transform-origin: center;
       transform: rotate(-45deg);
-      left: calc(50% - -160px);
+      left: calc(100% - 45px);
+      top: 2.5rem;
+      @media (--bp-md) {
+        left: calc(100% - 75px);
+      }
+      @media (--bp-lg) {
+        left: calc(50% - -160px);
+        top: 13.5rem;
+      }
     }
     & svg {
       height: 4.8rem;
@@ -301,13 +309,13 @@
   & .slide-open-content-inner-container {
     position: absolute;
     top: 0;
-    height: 120rem;
+    height: 50rem;
     width: 100%;
     background-color: #74a9b8;
     opacity: 1;
     transition: all 0.3s ease-in-out;
     @media (--bp-lg) {
-      height: 100rem;
+      height: 70rem;
     }
     &.closed {
       opacity: 0;
@@ -317,8 +325,11 @@
   & .slide-open-content-inner {
     margin: auto;
     width: 80%;
-    margin-top: 17rem;
+    margin-top: 6rem;
     max-width: 110rem;
+    @media (--bp-lg) {
+      margin-top: 17rem;
+    }
     & p {
       /*max-width: unset !important;*/
     }
@@ -935,10 +946,10 @@
     & .slide-open-content-inner-container {
       background-color: #3a8599;
       height: 101rem;
-      
+
       & p {
         color: white;
-       
+
         @media (--bp-lg) {
           width: 65%;
           text-align: right;
@@ -949,11 +960,19 @@
       }
     }
     & .slide-open-toggle {
-      top: 12rem;
+        top: 12rem;
       &.closed {
         transform-origin: center;
         transform: rotate(-45deg);
-        left: calc(50% - 250px);
+        left: calc(100% - 45px);
+        top: -3rem;
+        @media (--bp-md) {
+          left: calc(100% - 75px);
+        }
+        @media (--bp-lg) {
+          left: calc(50% - 250px);
+          top: 12rem;
+        }
       }
     }
     & .slide-open-content {
@@ -1093,6 +1112,7 @@
     transition: all 0.3s ease-in-out;
     &:hover {
       & .background-image {
+        transition: all 0.3s ease-in-out;
         transform: scale(1.05);
       }
     }
