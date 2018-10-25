@@ -109,6 +109,7 @@ $mode = get_field('mode', 'option');
             <?php } ?>
       </li>
     </ul>
+     <?php if ( $blog_id == 1 ) { ?>
     <div class="navigation__footer">
       <div class="navigation__footer__container">
         <div class="navigation__footer__testdrive">
@@ -132,6 +133,33 @@ $mode = get_field('mode', 'option');
 </ul></div><ul class="languages nav"><li><a href="<?php echo get_site_url(); ?>"><span class="language language--active menu-item">nl</span></a></li><li><a href="<?php echo get_site_url(); ?>/fr"><span class="language menu-item">fr</span></a></li></ul>        </div>
       </div>
     </div>
+    <?php } ?>
+     <?php if ( $blog_id == 2 ) { ?>
+    <div class="navigation__footer">
+      <div class="navigation__footer__container">
+        <div class="navigation__footer__testdrive">
+          <span class="navigation__footer__testdrive__label">
+            Vivez vous-même<br>l'innovation de Mercedes-Benz. 
+          </span>
+          <span class="navigation__footer__testdrive__call-to-action">
+            <a href="https://mercedes-benzcontact.be/fr-BE/Lead?owda=misc&type=Testdrive" target="_blank" class="navigation__footer__testdrive__button" onclick="ga('send', 'event', 'Link', 'Click', 'Testdrive');">
+              <span class="navigation__footer__testdrive__button__label">
+                Demandez un essai              </span>
+              <span class="navigation__footer__testdrive__button__icon">
+                <svg viewBox="0 0 29 55" xmlns="http://www.w3.org/2000/svg">
+  <path d="M2.75418994,54.2739628 C2.4301676,54.5979865 2.02513966,54.7599983 1.62011173,54.7599983 C1.2150838,54.7599983 0.810055866,54.5979865 0.48603352,54.2739628 C-0.162011173,53.6259155 -0.162011173,52.6538445 0.48603352,52.0057972 L25.1117318,27.3799992 L0.48603352,2.7542011 C-0.162011173,2.10615378 -0.162011173,1.13408281 0.48603352,0.486035488 C1.13407821,-0.162011829 2.10614525,-0.162011829 2.75418994,0.486035488 L28.5139665,26.2459164 C29.1620112,26.8939637 29.1620112,27.8660346 28.5139665,28.514082 L2.75418994,54.2739628 Z"></path>
+</svg>              </span>
+            </a>
+          </span>
+        </div>
+        <div class="navigation__footer__navigation">
+          <div class="nav-footer-inner"><ul id="menu-footer-navigation" class="nav"><li id="menu-item-266" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-266"><a href="<?php echo get_site_url(); ?>/politique-en-matiere-de-cookies/">Cookie Policy</a></li>
+<li id="menu-item-268" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-268"><a href="<?php echo get_site_url(); ?>/conditions-generales/">Conditions Générales</a></li>
+<li id="menu-item-267" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-267"><a href="<?php echo get_site_url(); ?>/protection-de-la-vie-privee/">Privacy</a></li>
+</ul></div><ul class="languages nav"><li><a href="<?php echo get_site_url(); ?>"><span class="language language--active menu-item">nl</span></a></li><li><a href="<?php echo get_site_url(); ?>/fr"><span class="language menu-item">fr</span></a></li></ul>        </div>
+      </div>
+    </div>
+    <?php } ?>
   </div>
 </div>
   
