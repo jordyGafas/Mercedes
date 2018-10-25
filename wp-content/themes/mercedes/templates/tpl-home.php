@@ -368,6 +368,8 @@ get_header();?>
       </div>
   </div>
 </div>
+<<<<<<< HEAD
+=======
 <div class="navigation">
   <div class="navigation__overlay">
     <a href="#" class="menu-icon menu-icon--active" id="navigation-toggle">
@@ -503,4 +505,5 @@ get_header();?>
     </div>
   </div>
 </div>
+>>>>>>> 5ba92867cf8c139b24710bd922feeb83a067ba47
 <?php get_footer();?>
