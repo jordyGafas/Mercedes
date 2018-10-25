@@ -96,6 +96,7 @@ export const barbaInit = () => {
     },
     onLeave: function() {
       //removeAllEventListeners();
+      _body.classList.remove("nav-open");
     },
     onLeaveCompleted: function() {}
   });
@@ -123,6 +124,7 @@ export const barbaInit = () => {
     onLeave: function() {
       _body.classList.remove("is-article");
       _html.classList.remove("article-is-loaded");
+      _body.classList.remove("nav-open");
       console.log("prev stat", Barba.HistoryManager.prevStatus().namespace);
     },
     onLeaveCompleted: function() {
@@ -145,6 +147,7 @@ export const barbaInit = () => {
     onLeave: function() {
       _body.classList.remove("is-page");
       _html.classList.remove("page-is-loaded");
+      _body.classList.remove("nav-open");
     },
     onLeaveCompleted: function() {}
   });

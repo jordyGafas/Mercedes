@@ -43146,6 +43146,7 @@ const barbaInit = () => {
     },
     onLeave: function() {
       //removeAllEventListeners();
+      _body.classList.remove("nav-open");
     },
     onLeaveCompleted: function() {}
   });
@@ -43173,6 +43174,7 @@ const barbaInit = () => {
     onLeave: function() {
       _body.classList.remove("is-article");
       _html.classList.remove("article-is-loaded");
+      _body.classList.remove("nav-open");
       console.log("prev stat", barba_js__WEBPACK_IMPORTED_MODULE_1___default.a.HistoryManager.prevStatus().namespace);
     },
     onLeaveCompleted: function() {
@@ -43195,6 +43197,7 @@ const barbaInit = () => {
     onLeave: function() {
       _body.classList.remove("is-page");
       _html.classList.remove("page-is-loaded");
+      _body.classList.remove("nav-open");
     },
     onLeaveCompleted: function() {}
   });
@@ -43654,6 +43657,7 @@ const openSlides = () => {
       console.log("button1", closedContent);
       console.log("button1", openContent);
       closedContent.classList.toggle("closed");
+      slider.classList.toggle("closed");
       openContent.classList.toggle("closed");
       button.classList.toggle("closed");
     });
@@ -43679,6 +43683,7 @@ const openSlides = () => {
     );
     button2.addEventListener("click", function() {
       closedContent2.classList.toggle("closed");
+      slider2.classList.toggle("closed");
       openContent2.classList.toggle("closed");
       button2.classList.toggle("closed");
     });
