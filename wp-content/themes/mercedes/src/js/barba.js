@@ -9,12 +9,12 @@ import { TweenLite } from "gsap/TweenLite";
 import { CSSPlugin } from "gsap/CSSPlugin";
 import { TimelineLite } from "gsap/TimelineLite";
 import Rellax from "./vendor/rellax.js";
-import scrollAnimations from './vendor/scrollAnimations'
+import scrollAnimations from "./vendor/scrollAnimations";
 
 import Swiper from "swiper";
 // Single Product Slider
 var singleProductSliderInit = function() {
-  console.log("test")
+  console.log("test");
   var singleProductSlider = new Swiper(".js-single-product-slider", {
     slidesPerView: 1,
     allowTouchMove: true,
@@ -41,8 +41,8 @@ var singleProductSliderInit = function() {
     }
   });
 
-  if(singleProductSlider){
-  //singleProductSlider.controller.control = singleProductThumbs;
+  if (singleProductSlider) {
+    //singleProductSlider.controller.control = singleProductThumbs;
   }
   //singleProductThumbs.controller.control = singleProductSlider;
 
@@ -58,7 +58,6 @@ var singleProductSliderInit = function() {
       loadPrevNext: false
     }
   });
-
 };
 
 export const barbaInit = () => {
@@ -79,6 +78,12 @@ export const barbaInit = () => {
     namespace: "home",
     onEnter: function() {
       _body.classList.add("is-home");
+      if (localStorage.getItem("prev") == "home") {
+        document.querySelector(".block9").scrollIntoView({
+          behavior: "instant",
+          block: "start"
+        });
+      }
     },
     onEnterCompleted: function() {
       _html.classList.add("home-is-loaded");
@@ -101,6 +106,12 @@ export const barbaInit = () => {
     namespace: "article",
     onEnter: function() {
       _body.classList.add("is-article");
+      console.log("prev stat", Barba.HistoryManager.prevStatus().namespace);
+      localStorage.setItem("prev", "");
+      if (Barba.HistoryManager.prevStatus().namespace == "home") {
+        console.log("Bingo");
+        localStorage.setItem("prev", "home");
+      }
     },
     onEnterCompleted: function() {
       _html.classList.add("article-is-loaded");
@@ -111,8 +122,14 @@ export const barbaInit = () => {
     onLeave: function() {
       _body.classList.remove("is-article");
       _html.classList.remove("article-is-loaded");
+      console.log("prev stat", Barba.HistoryManager.prevStatus().namespace);
     },
-    onLeaveCompleted: function() {}
+    onLeaveCompleted: function() {
+      if (Barba.HistoryManager.prevStatus().namespace == "home") {
+        console.log("Bingo");
+        window.scrollTo(0, 2000);
+      }
+    }
   });
 
   // PAGE VIEW
@@ -196,12 +213,14 @@ export const barbaInit = () => {
           autoAlpha: 1,
           visibility: "visible",
           delay: 0.4,
-          onStart: function() {
-
-          },
+          onStart: function() {},
           onComplete: function() {
             if (window.pageYOffset > 0) {
-              window.scrollTo(0, 0);
+              if(localStorage.getItem("prev")=="home" && Barba.HistoryManager.currentStatus().namespace!="article"){
+                localStorage.setItem("prev", "");
+              }else{
+                window.scrollTo(0, 0);
+              }
             }
             TweenLite.set(_old, {
               display: "none"
