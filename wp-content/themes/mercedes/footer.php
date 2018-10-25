@@ -155,7 +155,7 @@ $mode = get_field('mode', 'option');
           <div class="nav-footer-inner"><ul id="menu-footer-navigation" class="nav"><li id="menu-item-266" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-266"><a href="<?php echo get_site_url(); ?>/politique-en-matiere-de-cookies/">Cookie Policy</a></li>
 <li id="menu-item-268" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-268"><a href="<?php echo get_site_url(); ?>/conditions-generales/">Conditions Générales</a></li>
 <li id="menu-item-267" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-267"><a href="<?php echo get_site_url(); ?>/protection-de-la-vie-privee/">Privacy</a></li>
-</ul></div><ul class="languages nav"><li><a href="<?php echo get_site_url(); ?>"><span class="language language--active menu-item">nl</span></a></li><li><a href="<?php echo get_site_url(); ?>/fr"><span class="language menu-item">fr</span></a></li></ul>        </div>
+</ul></div><ul class="languages nav"><li><a href="<?php echo get_site_url(); ?>"><span class="language">nl</span></a></li><li><a href="<?php echo get_site_url(); ?>/fr"><span class="language menu-item language--active menu-item">fr</span></a></li></ul>        </div>
       </div>
     </div>
     <?php } ?>
