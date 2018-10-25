@@ -43654,6 +43654,7 @@ const openSlides = () => {
       console.log("button1", closedContent);
       console.log("button1", openContent);
       closedContent.classList.toggle("closed");
+      slider.classList.toggle("closed");
       openContent.classList.toggle("closed");
       button.classList.toggle("closed");
     });
@@ -43679,6 +43680,7 @@ const openSlides = () => {
     );
     button2.addEventListener("click", function() {
       closedContent2.classList.toggle("closed");
+      slider2.classList.toggle("closed");
       openContent2.classList.toggle("closed");
       button2.classList.toggle("closed");
     });
