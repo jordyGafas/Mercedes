@@ -371,7 +371,12 @@ get_header();?>
 <div class="navigation">
   <div class="navigation__overlay">
     <a href="#" class="menu-icon menu-icon--active" id="navigation-toggle">
+       <?php if ( $blog_id == 1 ) { ?>
       <span class="menu-icon__label">Sluiten</span>
+      <?php } ?>
+       <?php if ( $blog_id == 2 ) { ?>
+        <span class="menu-icon__label">Fermer</span>
+        <?php } ?>
       <div class="menu-icon__cross" id="cross">
         <span class="menu-icon__bar menu-icon__cross__bar"></span>
         <span class="menu-icon__bar menu-icon__cross__bar"></span>
