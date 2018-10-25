@@ -65,9 +65,6 @@ export const barbaInit = () => {
   const _html = document.documentElement;
   const _body = document.body;
 
-  Barba.Dispatcher.on("linkClicked", el => {
-    lastClickEl = el;
-  });
   //sideMenuButton();
   /* ----------------------------------
     VIEWS
@@ -78,6 +75,7 @@ export const barbaInit = () => {
     namespace: "home",
     onEnter: function() {
       _body.classList.add("is-home");
+      console.log("prev home", localStorage.getItem("prev"));
       if (localStorage.getItem("prev") == "home") {
         document.querySelector(".block9").scrollIntoView({
           behavior: "instant",
@@ -94,6 +92,7 @@ export const barbaInit = () => {
       openSlides();
       //var rellax = new Rellax('.rellax');
       scrollAnimations();
+      localStorage.setItem("prev", "");
     },
     onLeave: function() {
       //removeAllEventListeners();
@@ -106,11 +105,13 @@ export const barbaInit = () => {
     namespace: "article",
     onEnter: function() {
       _body.classList.add("is-article");
-      console.log("prev stat", Barba.HistoryManager.prevStatus().namespace);
+      console.log("prev stat", Barba.HistoryManager.prevStatus());
       localStorage.setItem("prev", "");
-      if (Barba.HistoryManager.prevStatus().namespace == "home") {
-        console.log("Bingo");
-        localStorage.setItem("prev", "home");
+      if (Barba.HistoryManager.prevStatus()!=null) {
+        if (Barba.HistoryManager.prevStatus().namespace == "home") {
+          console.log("Bingo");
+          localStorage.setItem("prev", "home");
+        }
       }
     },
     onEnterCompleted: function() {
@@ -125,10 +126,6 @@ export const barbaInit = () => {
       console.log("prev stat", Barba.HistoryManager.prevStatus().namespace);
     },
     onLeaveCompleted: function() {
-      if (Barba.HistoryManager.prevStatus().namespace == "home") {
-        console.log("Bingo");
-        window.scrollTo(0, 2000);
-      }
     }
   });
 
@@ -216,9 +213,12 @@ export const barbaInit = () => {
           onStart: function() {},
           onComplete: function() {
             if (window.pageYOffset > 0) {
-              if(localStorage.getItem("prev")=="home" && Barba.HistoryManager.currentStatus().namespace!="article"){
+              if (
+                localStorage.getItem("prev") == "home" &&
+                Barba.HistoryManager.currentStatus().namespace != "article"
+              ) {
                 localStorage.setItem("prev", "");
-              }else{
+              } else {
                 window.scrollTo(0, 0);
               }
             }
