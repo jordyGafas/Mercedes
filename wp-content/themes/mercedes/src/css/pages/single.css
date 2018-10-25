@@ -6,13 +6,13 @@
     }
 
     & h1{
-        font-size: 3rem;
-        color:#000;
+        font-size: 3.6rem;
         font-family: Open Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
         line-height: 4rem;
+         color:#212529;
         font-weight: 800;
         @media (min-width: 600px) {
-            font-size: 3.6rem;
+            font-size: 5rem;
             line-height: 3rem;
         }
         
@@ -34,10 +34,9 @@
         font-size: 2.5rem;
         line-height: 3rem;
         font-weight: bold;
-        text-transform: uppercase;
         margin: 4rem auto 2rem auto;
         max-width: 78rem;
-        color: var(--color-blue);
+        color:#212529;
     }
 
     & .intro{
@@ -52,9 +51,8 @@
         max-width: 78rem;
         margin: 2rem auto;
         margin-top: 5px;
-        color:#000;
-        font-weight: 100;
-        line-height: 4rem;
+        color:#212529;
+        line-height: 3.5rem;
         font-size:2rem;
     } 
 
@@ -177,8 +175,8 @@
     }
 
     & .title-block-pretitle {
-        line-height: 3;
-        font-size: 2.5rem;
+        line-height: 2.5;
+        font-size: 3.5rem;
         font-weight: 100;
         font-family: Open Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
     }
