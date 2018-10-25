@@ -8,6 +8,7 @@
     & h1{
         font-size: 3rem;
         color:#000;
+        font-family: Open Sans,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
         line-height: 2.5rem;
         font-weight: 800;
         @media (min-width: 600px) {
@@ -143,9 +144,9 @@
     display: block;
     position: absolute;
     width: 100%;
-    height: 10rem;
+    height: 12rem;
     left: 0;
-    bottom: 268px;
+    bottom: 250px;
     -webkit-transform: skewY(-3deg);
     transform: skewY(-3deg);
     background: #fff;
