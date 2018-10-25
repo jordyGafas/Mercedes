@@ -1,5 +1,4 @@
 <?php get_header(); ?>
-<div class="header_image" style='background-image:url(<?php the_field("banner_image") ?>);'>
 <div class="single-article__back">
 		<div class="back-row">
 			<a href="<?php echo get_site_url();?>"><div>
@@ -7,6 +6,8 @@
 			</div><div><?php the_field('homepage_link_title', 'option'); ?></div></a>
 		</div>
 	</div>
+<div class="header_image" style='background-image:url(<?php the_field("banner_image") ?>);'>
+
 </div>
 <div class="row">
 	<div class="title-block">
