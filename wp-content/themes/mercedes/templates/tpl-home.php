@@ -372,11 +372,6 @@ get_header();?>
   <div class="navigation__overlay">
     <a href="#" class="menu-icon menu-icon--active" id="navigation-toggle">
       <span class="menu-icon__label">Sluiten</span>
-      <div class="menu-icon__hamburger" id="hamburger">
-        <span class="menu-icon__bar menu-icon__hamburger__bar"></span>
-        <span class="menu-icon__bar menu-icon__hamburger__bar"></span>
-        <span class="menu-icon__bar menu-icon__hamburger__bar"></span>
-      </div>
       <div class="menu-icon__cross" id="cross">
         <span class="menu-icon__bar menu-icon__cross__bar"></span>
         <span class="menu-icon__bar menu-icon__cross__bar"></span>
@@ -384,6 +379,7 @@ get_header();?>
     </a>
     <ul class="navigation__list">
       <li class="navigation__list__item">
+         <?php if ( $blog_id == 1 ) { ?>
         <a href="https://next.tijd.be/elektromobiliteit/" class="navigation__list__item__anchor">
           <span class="navigation__list__item__pretitle">01</span>
           <span class="navigation__list__item__title">
@@ -399,6 +395,24 @@ get_header();?>
             <span class="navigation__list__item__image__overlay"></span>
           </div>
         </a>
+        <?php } ?>
+        <?php if ( $blog_id == 2 ) { ?>
+              <a href="https://next.lecho.be/electromobilite/" class="navigation__list__item__anchor">
+          <span class="navigation__list__item__pretitle">01</span>
+          <span class="navigation__list__item__title">
+            Quand votre voiture fait tourner le réfrigérateur</span>
+          <span class="navigation__list__item__call-to-action">
+            <svg viewBox="0 0 118 187" xmlns="http://www.w3.org/2000/svg">
+  <g fill="none" fill-rule="evenodd">
+    <polygon class="trapezium" fill="#FFF" points="0 0.455370244 0 118.468806 117.645694 186.751046 118 187 118 68.9888484 0.354306304 0"></polygon>
+    <path class="arrow" d="M64.748 93l-4.34-4.293a.992.992 0 0 1 0-1.414 1.02 1.02 0 0 1 1.43 0l6.066 6a.992.992 0 0 1 0 1.414l-6.067 6a1.02 1.02 0 0 1-1.43 0 .992.992 0 0 1 0-1.414L64.747 95H51.012A1.006 1.006 0 0 1 50 94c0-.552.453-1 1.011-1h13.737z" fill="#00C1F3" fill-rule="nonzero"></path>
+  </g>
+</svg>          </span>
+          <div class="navigation__list__item__image" style="background-image: url('https://next.tijd.be/wp-content/themes/mercedes-longread/dist/images/navigation/electromobility.jpg');">
+            <span class="navigation__list__item__image__overlay"></span>
+          </div>
+        </a>
+        <?php } ?>
       </li>
       <li class="navigation__list__item">
         <a href="https://next.tijd.be/design/" class="navigation__list__item__anchor">
@@ -418,21 +432,42 @@ get_header();?>
         </a>
       </li>
       <li class="navigation__list__item">
-        <a href="https://next.tijd.be/" class="navigation__list__item__anchor">
+        <?php if ( $blog_id == 1 ) { ?>
+                    <a href="https://next.tijd.be/" class="navigation__list__item__anchor">
           <span class="navigation__list__item__pretitle">03</span>
+
           <span class="navigation__list__item__title">
             De geconnecteerde auto          </span>
           <span class="navigation__list__item__call-to-action">
             <svg viewBox="0 0 118 187" xmlns="http://www.w3.org/2000/svg">
-  <g fill="none" fill-rule="evenodd">
-    <polygon class="trapezium" fill="#FFF" points="0 0.455370244 0 118.468806 117.645694 186.751046 118 187 118 68.9888484 0.354306304 0"></polygon>
-    <path class="arrow" d="M64.748 93l-4.34-4.293a.992.992 0 0 1 0-1.414 1.02 1.02 0 0 1 1.43 0l6.066 6a.992.992 0 0 1 0 1.414l-6.067 6a1.02 1.02 0 0 1-1.43 0 .992.992 0 0 1 0-1.414L64.747 95H51.012A1.006 1.006 0 0 1 50 94c0-.552.453-1 1.011-1h13.737z" fill="#00C1F3" fill-rule="nonzero"></path>
-  </g>
-</svg>          </span>
-          <div class="navigation__list__item__image" style="background-image: url('https://next.tijd.be/wp-content/themes/mercedes-longread/dist/images/navigation/connectivity.jpg');">
-            <span class="navigation__list__item__image__overlay"></span>
-          </div>
-        </a>
+          <g fill="none" fill-rule="evenodd">
+            <polygon class="trapezium" fill="#FFF" points="0 0.455370244 0 118.468806 117.645694 186.751046 118 187 118 68.9888484 0.354306304 0"></polygon>
+            <path class="arrow" d="M64.748 93l-4.34-4.293a.992.992 0 0 1 0-1.414 1.02 1.02 0 0 1 1.43 0l6.066 6a.992.992 0 0 1 0 1.414l-6.067 6a1.02 1.02 0 0 1-1.43 0 .992.992 0 0 1 0-1.414L64.747 95H51.012A1.006 1.006 0 0 1 50 94c0-.552.453-1 1.011-1h13.737z" fill="#00C1F3" fill-rule="nonzero"></path>
+          </g>
+          </svg>          </span>
+                  <div class="navigation__list__item__image" style="background-image: url('https://next.tijd.be/wp-content/themes/mercedes-longread/dist/images/navigation/connectivity.jpg');">
+                    <span class="navigation__list__item__image__overlay"></span>
+                  </div>
+            </a>
+            <?php } ?>
+            <?php if ( $blog_id == 2 ) { ?>
+             <a href="https://next.lecho.be/" class="navigation__list__item__anchor">
+          <span class="navigation__list__item__pretitle">03</span>
+
+          <span class="navigation__list__item__title">
+            La voiture connectée                   </span>
+          <span class="navigation__list__item__call-to-action">
+            <svg viewBox="0 0 118 187" xmlns="http://www.w3.org/2000/svg">
+          <g fill="none" fill-rule="evenodd">
+            <polygon class="trapezium" fill="#FFF" points="0 0.455370244 0 118.468806 117.645694 186.751046 118 187 118 68.9888484 0.354306304 0"></polygon>
+            <path class="arrow" d="M64.748 93l-4.34-4.293a.992.992 0 0 1 0-1.414 1.02 1.02 0 0 1 1.43 0l6.066 6a.992.992 0 0 1 0 1.414l-6.067 6a1.02 1.02 0 0 1-1.43 0 .992.992 0 0 1 0-1.414L64.747 95H51.012A1.006 1.006 0 0 1 50 94c0-.552.453-1 1.011-1h13.737z" fill="#00C1F3" fill-rule="nonzero"></path>
+          </g>
+          </svg>          </span>
+                  <div class="navigation__list__item__image" style="background-image: url('https://next.tijd.be/wp-content/themes/mercedes-longread/dist/images/navigation/connectivity.jpg');">
+                    <span class="navigation__list__item__image__overlay"></span>
+                  </div>
+            </a>
+            <?php } ?>
       </li>
     </ul>
     <div class="navigation__footer">
