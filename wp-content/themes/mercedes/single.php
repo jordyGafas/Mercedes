@@ -11,6 +11,7 @@
 <div class="row">
 	<div class="title-block">
 		<div class="titlecontainer">
+		<span class="title-block-pretitle">01</span>
 		<div class="title"><h1><?php the_title() ?></h1></div>
 		</div>
 	</div>
