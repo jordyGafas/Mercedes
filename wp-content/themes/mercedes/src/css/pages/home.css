@@ -315,7 +315,7 @@
     margin-top: 27rem;
     max-width: 110rem;
     & p {
-      max-width: unset !important;
+      /*max-width: unset !important;*/
     }
   }
 
